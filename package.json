@@ -2,5 +2,29 @@
   "dependencies": {
     "apollo-server-express": "^3.11.1",
     "graphql": "^16.6.0"
-  }
+  },
+  "name": "deep-thoughts2",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limichael97/deep-thoughts2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limichael97/deep-thoughts2/issues"
+  },
+  "homepage": "https://github.com/limichael97/deep-thoughts2#readme"
 }
